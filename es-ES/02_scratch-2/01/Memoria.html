@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="world"  lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Memoria — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Memoria</h1>
+      <span class="level-indicator">Scratch 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Español</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 2</a></li><li class="breadcrumbs-item current">Memoria</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="introduccion" class="level1 intro">
+<h1>Introducción</h1>
+<p>En este proyecto, ¡vas a crear un juego de memoria en el que tendrás que memorizar y repetir una secuencia de colores aleatoria!</p>
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
+  <img src="colour-final.png">
+</div>
+</section>
+<section id="paso-1-colores-al-azar" class="level1 activity">
+<h1>Paso 1: Colores al azar</h1>
+<p>Para empezar, vamos a crear un personaje que pueda cambiar a una secuencia de colores al azar que el jugador tendrá que memorizar.</p>
+<section id="lista-de-tareas-de-la-actividad" class="level2 check">
+<h2>Lista de tareas de la actividad</h2>
+<ul>
+<li><p>Crea un nuevo proyecto de Scratch, y borra el objeto gato para que el proyecto esté vacío. Puedes encontrar el editor online de Scratch en <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
+<li><p>Escoge un personaje y un fondo. No es necesario que tu personaje sea una persona, pero tiene que poder cambiar de color.</p>
+<p><img src="colour-sprite.png" alt="screenshot" /></p></li>
+<li><p>En el juego, usarás un número diferente para representar cada color:</p>
+<ul>
+<li>1 = rojo;</li>
+<li>2 = azul;</li>
+<li>3 = verde;</li>
+<li>4 = amarillo.</li>
+</ul>
+<p>Da a tu personaje disfraces de 4 colores diferentes. Los colores tendrán que ser los indicados arriba. Asegúrate de que los colores de los disfraces están en el orden correcto.</p>
+<p><img src="colour-costume.png" alt="screenshot" /></p></li>
+<li><p>Para crear una secuencia aleatoria, tendrás que crear una <strong>lista</strong>. Una lista es simplemente una variable que almacena una gran cantidad de datos <strong>en orden</strong>. Crea una nueva lista llamada <code class="blockdata">secuencia</code>. Como tu personaje es el único que necesita ver esta lista, también podemos seleccionar ‘Sólo para este objeto’.</p>
+<p><img src="colour-list.png" alt="screenshot" /></p>
+<p>A continuación, deberías ver una lista vacía en la parte superior izquierda del escenario, y un montón de bloques nuevos para usar listas.</p>
+<p><img src="colour-list-blocks.png" alt="screenshot" /></p></li>
+<li><p>Añade este código a tu personaje para añadir un número al azar a tu lista (y mostrar el disfraz correcto) 5 veces:</p>
+<p><img src="c447d47c0b2d37f4fafffaa940343381872af348.png" alt="    al presionar bandera verde
+    borrar (todos v) de [secuencia v]
+    repetir (5)
+        añade (número al azar entre (1) y (4)) a [secuencia v]
+        cambiar disfraz a (elemento (último v) de [secuencia v])
+        esperar (1) segundos
+    fin" /></p>
+<p>Fíjate que has vaciado la lista para empezar.</p></li>
+</ul>
+</section>
+<section id="reto-anadir-sonido" class="level2 challenge">
+<h2>Reto: Añadir sonido</h2>
+<p>Haz varias pruebas con tu proyecto. Verás que a veces sale el mismo número dos (o más) veces seguidas. Esto hará que la secuencia sea más difícil de memorizar. ¿Puedes hacer que suene el tambor cada vez que cambia el disfraz del personaje?</p>
+<p>¿Puedes hacer que suene un sonido diferente del tambor en función del número al azar escogido? Esto es <em>muy</em> parecido al código para cambiar el disfraz del personaje.</p>
+</section>
+<section id="guarda-el-proyecto" class="level2 save">
+<h2>Guarda el Proyecto</h2>
+</section>
+</section>
+<section id="paso-2-repite-la-secuencia" class="level1 activity">
+<h1>Paso 2: Repite la secuencia</h1>
+<p>Vamos a añadir 4 botones para que el jugador pueda repetir la secuencia a recordar.</p>
+<section id="lista-de-tareas-de-la-actividad-1" class="level2 check">
+<h2>Lista de tareas de la actividad</h2>
+<ul>
+<li><p>Añade 4 objetos al proyecto, que se convertirán en botones. Edita los 4 objetos para que haya 1 para cada uno de los 4 colores.</p>
+<p><img src="colour-drums.png" alt="screenshot" /></p></li>
+<li><p>Al presionar el tambor rojo, tendrás que enviar un mensaje a tu personaje, diciéndole que se ha presionado el botón rojo. Añade este código al tambor rojo:</p>
+<p><img src="a2297769ad8eeb595f24e9a01f5a26ef3b9ae57d.png" alt="    al clickear este objeto
+    enviar [rojo v]" /></p></li>
+<li><p>Cuando tu personaje reciba este mensaje, tendrá que comprobar si el número 1 es el primero de la lista (esto significa que el rojo es el siguiente color en la secuencia). Si lo es, puedes eliminar el número de la lista, ya que el jugador ha acertado el color. Si no lo es, ¡se acabó el juego!.</p>
+<p><img src="7505a3a275dfb53c8d15b9527a1833861ce51720.png" alt="    al recibir [rojo v]
+    si &lt;(elemento (1 v) de [secuencia v]) = [1]&gt; entonces
+        borrar (1 v) de [secuencia v]
+    si no
+        decir [¡Fin del juego!] por (1) segundos
+        detener [todos v]
+    fin" /></p></li>
+<li><p>También podrías hacer que parpadeen luces cuando se haya vaciado la lista, ya que esto significa que el jugador ha acertado la secuencia entera. Añade este código al final del programa <code class="blockevents">al presionar bandera verde</code> de tu personaje:</p>
+<p><img src="a42d8047de0b153b16cd869c70472c9748189954.png" alt="    esperar hasta que &lt;(longitud de [secuencia v]) = [0]&gt;
+    enviar [victoria v] y esperar" /></p></li>
+<li><p>Haz clic en el escenario y añade este código para que el fondo cambie de color cuando el jugador gane.</p>
+<p><img src="24fd52fa170db0ab573014facf15673a3e2856aa.png" alt="    al recibir [victoria v]
+    tocar sonido [drum machine v]
+    repetir (50)
+        cambiar efecto [color v] por (25)
+        esperar (0.1) segundos
+    fin
+    quitar efectos gráficos" /></p></li>
+</ul>
+</section>
+<section id="reto-crear-4-botones" class="level2 challenge">
+<h2>Reto: Crear 4 botones</h2>
+<p>Repite los pasos indicados arriba para los botones de color azul, verde y amarillo. ¿Qué código se quedará igual, y qué código tendrás que cambiar para cada botón?</p>
+<p>También puedes hacer que se oigan sonidos al presionar los botones.</p>
+<p>¡Recuerda probar el código que has añadido! ¿Puedes memorizar una secuencia de 5 colores? ¿Es la secuencia diferente cada vez?</p>
+</section>
+<section id="guarda-el-proyecto-1" class="level2 save">
+<h2>Guarda el proyecto</h2>
+</section>
+</section>
+<section id="paso-3-niveles-multiples" class="level1 activity new-page">
+<h1>Paso 3: Niveles múltiples</h1>
+<p>Hasta ahora, el jugador sólo tiene que memorizar 5 colores. Vamos a mejorar el juego, haciendo que la secuencia sea más larga.</p>
+<section id="lista-de-tareas-de-la-actividad-2" class="level2 check">
+<h2>Lista de tareas de la actividad</h2>
+<ul>
+<li><p>Crea una nueva variable con el nombre <code class="blockdata">puntuación</code>.</p>
+<p><img src="colour-score.png" alt="screenshot" /></p></li>
+<li><p>Esta <code class="blockdata">puntuación</code> se usará para decidir la duración de la secuencia que el jugador tiene que memorizar. Para empezar, la puntuación (y la duración de la secuencia) es 3. Añade el siguiente bloque al principio del código <code class="blockevents">al presionar bandera verde</code> de tu personaje:</p>
+<p><img src="68d8067ac688f204f074f06efe874f5542a6c807.png" alt="    fijar [puntuación v] a [3]" /></p></li>
+<li><p>Ahora, en lugar de crear una secuencia de 5 colores, haremos que la <code class="blockdata">puntuación</code> determine la duración de la secuencia. Cambia el bucle <code class="blockcontrol">repetir</code> (para crear la secuencia) a:</p>
+<p><img src="c773149fd0dd3436a2abf7bff7629600d295792b.png" alt="    repetir (puntuación)
+    fin" /></p></li>
+<li><p>Si el jugador acierta la secuencia, deberías añadir 1 a la puntuación para aumentar la duración de la secuencia.</p>
+<p><img src="c59378473bf262d91edd100c3ced9be0855537c8.png" alt="    cambiar [puntuación v] por (1)" /></p></li>
+<li><p>Para acabar, tienes que añadir un bucle <code class="blockcontrol">por siempre</code> alrededor del código para generar la secuencia, y así se creará una nueva secuencia para cada nivel. El código de tu personaje debería ser así:</p>
+<p><img src="1bb3016869e407f33f0dcc3a58f4c74f98eab9c3.png" alt="    al presionar bandera verde
+    fijar [puntuación v] a [3]
+    por siempre
+        borrar (todos v) de [secuencia v]
+        repetir (puntuación)
+            añade (número al azar entre (1) y (4)) a [secuencia v]
+            cambiar disfraz a (elemento (último v) de [secuencia v])
+            esperar (1) segundos
+        fin
+        esperar hasta que &lt;(longitud de [secuencia v]) = [0]&gt;
+        enviar [victoria v] y esperar
+        cambiar [puntuación v] por (1)
+    fin" /></p></li>
+<li><p>Haz que tus amigos prueben el juego. ¡Recuerda esconder la lista <code class="blockdata">secuencia</code> antes de que jueguen!</p></li>
+</ul>
+</section>
+<section id="guarda-tu-proyecto" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-4-puntuacion-mas-alta" class="level1 activity">
+<h1>Paso 4: Puntuación más alta</h1>
+<p>Vamos a hacer que se guarde la puntuación más alta, para que puedas competir con tus amigos.</p>
+<section id="lista-de-tareas-de-la-actividad-3" class="level2 check">
+<h2>Lista de tareas de la actividad</h2>
+<ul>
+<li><p>Añade 2 nuevas variables a tu proyecto con los nombres <code class="blockdata">puntuación más alta</code> y <code class="blockdata">nombre</code>.</p></li>
+<li><p>Si se acaba el juego (al presionar el botón equivocado), tendrás que comprobar si la puntuación del jugador es mayor que la puntuación más alta actual. Si lo es, tienes que guardar esa puntuación como la puntuación más alta y hacer que se guarde el nombre del jugador. El botón rojo debería ser así:</p>
+<p><img src="4bf1dadcd32ca9d9830fa65b9a86b9a94bff4f69.png" alt="    al recibir [rojo v]
+    si &lt;(elemento (1 v) de [secuencia v]) = [1]&gt; entonces
+        borrar (1 v) de [secuencia v]
+    si no
+        decir [¡Fin del juego!] por (1) segundos
+        si &lt;(puntuación) &gt; (puntuación más alta)&gt; entonces
+            fijar [puntuación más alta v] a (puntuación)
+            preguntar [¡Puntuación más alta! ¿Cómo te llamas?] y esperar
+            fijar [nombre v] a (respuesta)
+        fin
+        detener [todos v]
+    fin" /></p></li>
+<li><p>¡Tendrás que añadir este nuevo código a los otros 3 botones también! ¿Te has dado cuenta de que el código de ‘Fin del Juego’ en los 4 botones es exactamente el mismo?</p>
+<p><img src="colour-same.png" alt="screenshot" /></p></li>
+<li><p>Si alguna vez tuvieras que cambiar algo de este código, como añadir un sonido o cambiar el mensaje de ‘¡Fin del Juego!’, ¡tendrías que cambiarlo 4 veces! Eso sería muy pesado y te llevaría mucho tiempo.</p>
+<p>En lugar de hacer eso, ¡puedes definir tus propios bloques y reusarlos en tu proyecto! Para hacer esto, presiona <code class="blockmoreblocks">más bloques</code>, y a continuación ‘Crear un bloque’. Llama a este nuevo bloque ‘Fin del Juego’.</p>
+<p><img src="colour-more.png" alt="screenshot" /></p></li>
+<li><p>Añade el código del bloque <code class="blockcontrol">si no</code> del botón rojo al nuevo bloque que aparece:</p>
+<p><img src="colour-make-block.png" alt="screenshot" /></p></li>
+<li><p>Acabas de crear una nueva <em>función</em> llamada <code class="blockmoreblocks">Fin del Juego</code>, que podrás usar siempre que quieras. Arrastra tu nuevo bloque de <code class="blockmoreblocks">Fin del Juego</code> hasta los 4 programas de los botones.</p>
+<p><img src="colour-use-block.png" alt="screenshot" /></p></li>
+<li><p>Ahora añade un sonido para cuando el jugador aprieta el botón equivocado. ¡Sólo tienes que añadir este código <em>una vez</em> en el bloque de <code class="blockmoreblocks">Fin del Juego</code> que has creado, en lugar de 4 veces!</p>
+<p><img src="colour-cough.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="reto-crear-mas-bloques" class="level2 challenge">
+<h2>Reto: Crear más bloques</h2>
+<p>¿Puedes encontrar otro código que sea el mismo para los 4 botones?</p>
+<p><img src="colour-more-blocks.png" alt="screenshot" /></p>
+<p>¿Puedes crear otro bloque personalizado, que se pueda usar en todos los botones?</p>
+</section>
+<section id="guarda-tu-proyecto-1" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="reto-otro-disfraz" class="level2 challenge">
+<h2>Reto: Otro disfraz</h2>
+<p>¿Te has dado cuenta de que el juego empieza con el personaje vestido con uno de los 4 colores, y que siempre muestra el último color de la secuencia mientras el jugador repite la secuencia?</p>
+<p>¿Puedes añadir otro disfraz de color blanco para el personaje, que aparecerá al principio del juego y cuando el jugador está intentando copiar la secuencia?</p>
+<p><img src="colour-white.png" alt="screenshot" /></p>
+</section>
+<section id="guarda-el-proyecto-2" class="level2 save">
+<h2>Guarda el proyecto</h2>
+</section>
+<section id="reto-nivel-de-dificultad" class="level2 challenge">
+<h2>Reto: Nivel de dificultad</h2>
+<p>¿Puedes hacer que el jugador pueda escoger entre ‘modo fácil’ (usando sólo los tambores rojo y azul) y ‘modo normal’ (usando los 4 tambores)?</p>
+<p>Incluso podrías añadir un modo ‘difícil’, ¡en el que se use un quinto tambor!</p>
+</section>
+<section id="guarda-tu-proyecto-2" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
